@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #060005;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Align all text in the body to center */
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/award page 03.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    text-align: center; /* Align text inside .banner to center */
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0c0c0c;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Align text inside nav links to center */
+}
+
+nav ul li:hover a {
+    font-size: 125%;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #ddd;
+    text-align: center; /* Align text inside .main-content to center */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center; /* Align text inside labels to center */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background: linear-gradient(rgba(171, 249, 129, 0.75), rgba(238, 44, 187, 0.75));
+    color: #1c1919;
+    text-align: center; /* Align text inside footer to center */
+    padding: 1rem;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens here */
+    .main-content {
+        padding: 20px; /* Example adjustment */
+    }
+
+    .event img {
+        max-height: 150px; /* Example adjustment */
+    }
+
+    /* Add more adjustments as needed */
+}

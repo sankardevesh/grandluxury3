@@ -1,0 +1,146 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #060005; /* Changed to hexadecimal color */
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/bg 1 event2.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: linear-gradient(rgba(171, 249, 129, 0.75), rgba(238, 44, 187, 0.75));
+    color: rgb(28, 25, 25);
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #0c0c0c; /* Changed to hexadecimal color */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li:hover a {
+    font-size: 125%;
+}
+
+/* Banner styles */
+#banner {
+    position: relative;
+    text-align: center;
+}
+
+#banner img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner-text h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Content section styles */
+.content,
+.gallery-item {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.gallery-item h3 {
+    color: #fff; /* Changed to hexadecimal color */
+}
+
+/* Service styles */
+.service {
+    margin-bottom: 40px;
+}
+
+/* Gallery styles */
+.gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    background-color: #873883;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
